@@ -3,7 +3,6 @@
 import { notFound } from "next/navigation";
 import { promises as fs } from "fs";
 import path from "path";
-import Link from "next/link";
 import LetterFlipCard from "@/components/card/lettercard";
 
 interface Letter {
@@ -35,12 +34,6 @@ export default async function LetterPage({
 
   return (
     <div className="max-w-full mx-auto px-4 py-12 space-y-8 text-center bg-pink-50">
-      <div>
-        <Link href="/letters" className="text-rose-500 underline">
-          ← Back to letters
-        </Link>
-      </div>
-
       <LetterFlipCard
         title={letter.title}
         paragraph1={letter.paragraph1}
