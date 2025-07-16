@@ -63,7 +63,7 @@ export default function LetterFlipCard({
                 initial="hidden"
                 animate="visible"
                 exit="hidden"
-                className="text-left text-gray-800 font-medium space-y-4 font-indie text-base sm:text-sm md:text-md lg:text-lg"
+                className="text-left text-gray-800 font-medium space-y-4 font-indie text-base sm:text-xs md:text-sm"
               >
                 {[paragraph1, paragraph2, paragraph3].map((text, i) => (
                   <motion.p key={i} custom={i} variants={paragraphVariants}>
@@ -129,7 +129,7 @@ export default function LetterFlipCard({
             }}
           >
             <motion.div
-              className="row-start-2 place-self-center flex justify-center text-center bg-white p-4 pb-12 rounded-sm shadow-md rotate-[-2deg] sm:w-1/2 lg:w-full md:w-3/4"
+              className="row-start-2 place-self-center flex justify-center text-center bg-white p-4 pb-12 rounded-sm shadow-md rotate-[-2deg] sm:w-4/6 lg:w-full md:w-3/4"
               variants={imageVariants}
               initial="hidden"
               animate="visible"
