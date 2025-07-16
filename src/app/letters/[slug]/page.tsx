@@ -18,15 +18,16 @@ interface Letter {
 export default async function LetterPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
+  const { slug } = await params;
   const file = await fs.readFile(
     path.join(process.cwd(), "public", "letters.json"),
     "utf-8"
   );
 
   const letters: Letter[] = JSON.parse(file);
-  const letter = letters.find((l) => l.slug === params.slug);
+  const letter = letters.find((l) => l.slug === slug);
 
   if (!letter) {
     return notFound();
