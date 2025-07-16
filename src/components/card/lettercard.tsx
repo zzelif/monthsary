@@ -3,7 +3,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 interface Props {
@@ -26,49 +26,76 @@ export default function LetterFlipCard({
 
   const transition = { duration: 1, ease: [0.42, 0, 0.58, 1] as const };
 
+  const paragraphVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.2, duration: 0.6 },
+    }),
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 0.95 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.6, delay: 0.3 },
+    },
+  };
+
   return (
-    // Wrapper to center the card in the viewport
     <div className="w-full h-full flex items-center justify-center bg-pink">
-      {/* The perspective "stage" for the card */}
       <div
         className="relative w-[1200px] h-[630px]"
         style={{ perspective: "2000px" }}
       >
-        {/* Animated Inside-Right Page (The Message) */}
+        {/* Right Page (Message Content) */}
         <motion.div
           className="absolute top-0 left-1/4 w-1/2 h-full bg-pink-100 rounded-r-lg shadow-lg p-8 flex flex-col justify-center z-10"
           initial={false}
-          animate={{
-            translateX: isOpen ? "50%" : "0%", // Moves right on open
-          }}
+          animate={{ translateX: isOpen ? "50%" : "0%" }}
           transition={transition}
         >
-          <div className="text-left text-gray-800 text-base font-medium space-y-4 font-indie">
-            <motion.p>{paragraph1}</motion.p>
-            <motion.p>{paragraph2}</motion.p>
-            <motion.p>{paragraph3}</motion.p>
-            <div className="pt-4">
-              <p className="font-semibold">Love</p>
-              <p className="italic">Dan</p>
-            </div>
-          </div>
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                className="text-left text-gray-800 font-medium space-y-4 font-indie text-base sm:text-sm md:text-md lg:text-lg"
+              >
+                {[paragraph1, paragraph2, paragraph3].map((text, i) => (
+                  <motion.p key={i} custom={i} variants={paragraphVariants}>
+                    {text}
+                  </motion.p>
+                ))}
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                  className="pt-4"
+                >
+                  <p className="font-semibold">Love,</p>
+                  <p className="italic">Dan</p>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </motion.div>
 
         {/* Flipping Cover */}
         <motion.div
           className="absolute top-0 left-1/4 w-1/2 h-full z-20"
-          style={{
-            transformStyle: "preserve-3d",
-            transformOrigin: "left",
-          }}
+          style={{ transformStyle: "preserve-3d", transformOrigin: "left" }}
           initial={false}
           animate={{
             rotateY: isOpen ? -180 : 0,
-            translateX: isOpen ? "50%" : "0%", // Stays put, just rotates
+            translateX: isOpen ? "50%" : "0%",
           }}
           transition={transition}
         >
-          {/* Front of the Cover */}
+          {/* Front Cover */}
           <div
             className="absolute w-full h-full bg-[#E86A6A] shadow-xl p-8 grid grid-rows-3"
             style={{ backfaceVisibility: "hidden" }}
@@ -84,7 +111,7 @@ export default function LetterFlipCard({
             </h1>
             <button
               onClick={handleFlip}
-              className="row-start-[-1] place-self-end flex items-center justify-between w-48 px-4 py-2 bg-black text-white rounded-md text-sm group sm:w-1/2 xs"
+              className="row-start-[-1] place-self-end flex items-center justify-between w-48 px-4 py-2 bg-black text-white rounded-md text-sm group sm:w-1/2"
             >
               Click to Open Card!
               <span className="transform transition-transform duration-300 group-hover:translate-x-1">
@@ -93,7 +120,7 @@ export default function LetterFlipCard({
             </button>
           </div>
 
-          {/* Back of the Cover (Inside-Left with Photo) */}
+          {/* Back of the Cover (Image) */}
           <div
             className="absolute w-full h-full bg-pink-100 shadow-lg p-8 grid grid-rows-3"
             style={{
@@ -101,7 +128,12 @@ export default function LetterFlipCard({
               backfaceVisibility: "hidden",
             }}
           >
-            <div className="row-start-2 place-self-center text-center bg-white p-4 pb-12 rounded-sm shadow-md rotate-[-2deg] sm:w-1/2 lg:w-full md:w-3/4">
+            <motion.div
+              className="row-start-2 place-self-center flex justify-center text-center bg-white p-4 pb-12 rounded-sm shadow-md rotate-[-2deg] sm:w-1/2 lg:w-full md:w-3/4"
+              variants={imageVariants}
+              initial="hidden"
+              animate="visible"
+            >
               <Image
                 src={image}
                 alt={image}
@@ -109,7 +141,8 @@ export default function LetterFlipCard({
                 height={225}
                 className="object-cover"
               />
-            </div>
+            </motion.div>
+
             <button
               onClick={handleFlip}
               className="row-start-[-1] place-self-start flex items-center justify-between w-48 px-4 py-2 bg-black text-white rounded-md text-sm group sm:w-1/2"
