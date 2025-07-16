@@ -36,7 +36,7 @@ export default function LetterFlipCard({
       >
         {/* Animated Inside-Right Page (The Message) */}
         <motion.div
-          className="absolute top-0 left-1/4 w-1/2 h-full bg-pink-50 rounded-r-lg shadow-lg p-8 flex flex-col justify-center z-10"
+          className="absolute top-0 left-1/4 w-1/2 h-full bg-pink-100 rounded-r-lg shadow-lg p-8 flex flex-col justify-center z-10"
           initial={false}
           animate={{
             translateX: isOpen ? "50%" : "0%", // Moves right on open
@@ -95,7 +95,7 @@ export default function LetterFlipCard({
 
           {/* Back of the Cover (Inside-Left with Photo) */}
           <div
-            className="absolute w-full h-full bg-pink-50 shadow-lg p-8 grid grid-rows-3"
+            className="absolute w-full h-full bg-pink-100 shadow-lg p-8 grid grid-rows-3"
             style={{
               transform: "rotateY(180deg)",
               backfaceVisibility: "hidden",
