@@ -15,10 +15,11 @@ interface Letter {
   image?: string;
 }
 
-export default async function LetterPage(context: {
+export default async function LetterPage({
+  params,
+}: {
   params: { slug: string };
 }) {
-  const { params } = await Promise.resolve(context);
   const file = await fs.readFile(
     path.join(process.cwd(), "public", "letters.json"),
     "utf-8"
@@ -27,7 +28,9 @@ export default async function LetterPage(context: {
   const letters: Letter[] = JSON.parse(file);
   const letter = letters.find((l) => l.slug === params.slug);
 
-  if (!letter) return notFound();
+  if (!letter) {
+    return notFound();
+  }
 
   return (
     <div className="max-w-full mx-auto px-4 py-12 space-y-8 text-center bg-pink-50">
