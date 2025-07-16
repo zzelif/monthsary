@@ -1,0 +1,9 @@
+{
+  "loveLetter": "My dearest love, every moment with you is a universe of magic...",
+  "memories": [
+    { "img": "/mem1.jpg", "caption": "Our first date 💫" },
+    { "img": "/mem2.jpg", "caption": "Laughing over coffee ☕" },
+    { "img": "/mem3.jpg", "caption": "Sunsets with you 🌅" }
+  ],
+  "anniversary": "2025-05-16"
+}
