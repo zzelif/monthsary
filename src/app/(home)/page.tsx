@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import IntroHeartCanvas from "@/components/intro";
 import Audio from "@/components/audio-playback";
 import ClickSpark from "@/components/layout/spark";
+import Header from "@/components/layout/header";
 import FloatingHearts from "@/components/ui/hearts";
 import Content from "@/components/content";
 import Story from "@/components/story";
@@ -36,6 +37,9 @@ export default function MonthsaryPage() {
         sparkCount={8}
         duration={400}
       >
+        <div className="fixed top-4 left-4 z-50">
+          <Header />
+        </div>
         {showIntro ? (
           <IntroHeartCanvas onFinish={() => setShowIntro(false)} />
         ) : (

@@ -2,13 +2,121 @@
   {
     "slug": "open-when-you-miss-me",
     "title": "Open When You Miss Me",
-    "message": "Hey love, if you're opening this, I just want to remind you how much I adore you...",
+    "paragraph1": "My dearest, every beat of my heart whispers your name when we are apart. In the quiet spaces between breaths, I hold you close as if you were wrapped in my arms. Even oceans cannot dilute the warmth of my longing, for your presence lingers in every corner of my mind.",
+    "paragraph2": "Though miles stretch between us, know that our souls remain intertwined in a dance of memory and hope. With every sunrise, I send you my love carried on the wind, guiding you back to me. Close your eyes, and you'll feel my hands brushing gently against your cheek.",
+    "paragraph3": "In this moment of separation, trust that my heartbeat syncs with yours across the distance. We are never truly alone; my love bridges every gap, nurturing the promise of our reunion. Until then, hold this letter close and let my devotion be your faithful companion.",
     "image": "/miss-you.jpg"
   },
   {
     "slug": "open-when-youre-happy",
     "title": "Open When You're Happy",
-    "message": "I'm smiling with you right now...",
+    "paragraph1": "My love, your laughter is the melody that brightens my world. In your joy, I find my own spirit soaring, uplifted by the light that shines within you. Each moment of happiness you experience feels like a celebration of our shared journey.",
+    "paragraph2": "Capture this bliss in your heart as a treasure to revisit on harder days. Let the echo of your smile remind you how deeply you are cherished, how your radiance transforms ordinary moments into golden memories. Embrace this warmth, for it is a testament to the beauty we build together.",
+    "paragraph3": "Know that I revel in your triumphs and delight in your every breath of contentment. Your happiness is my purpose, and I will always strive to paint your life with colors of joy. Keep shining, my darling—you illuminate everything you touch.",
     "image": "/happy.jpg"
+  },
+  {
+    "slug": "open-when-youre-sad",
+    "title": "Open When You're Sad",
+    "paragraph1": "Sweetheart, it's okay to let the tears fall and the sorrow wash over you. In these moments of vulnerability, your heart speaks its truth, and I honor every ounce of feeling you carry. You do not have to face this ache alone; I am here with every silent prayer and gentle thought.",
+    "paragraph2": "Imagine my arms wrapped around you, holding you steady as you release the weight of your grief. Even the darkest storms are followed by rainbows, and every tear nourishes the soil of your growth. Allow yourself to feel, to heal, and to emerge stronger on the other side.",
+    "paragraph3": "Let this letter be your sanctuary when the world feels overwhelming. I am your steadfast refuge, guiding you toward hope and light. Together, we will transform this sorrow into a testament of resilience and shared love.",
+    "image": "/sad.jpg"
+  },
+  {
+    "slug": "open-when-youre-angry",
+    "title": "Open When You're Angry",
+    "paragraph1": "My fierce love, I feel the fire inside you and I honor its strength. Anger is a powerful force that demands to be seen and heard; let it rise and move through you without fear or shame. You are not defined by this fury, but by the courage it takes to feel it fully.",
+    "paragraph2": "Imagine me beside you, a steady anchor as the storm rages. Breathe into the heat, release each ember of frustration, and trust that calm will follow. Your passion is a flame that lights our path, guiding us toward truth and transformation.",
+    "paragraph3": "When the smoke clears, know that my arms remain open and my heart unwavering. I stand with you in every emotion, ready to rebuild our peace together. In love, even the fiercest fire becomes a source of growth and renewal.",
+    "image": "/angry.jpg"
+  },
+  {
+    "slug": "open-when-youre-doubtful",
+    "title": "Open When You're Doubtful",
+    "paragraph1": "Beloved, I see the uncertainty clouding your vision and I honor your courage for even asking the questions. Doubt often visits us when we stand on the threshold of something great. Remember, the seeds of your dreams already lie within you, waiting for the faith to wake them.",
+    "paragraph2": "In moments when your mind falters, listen to the whisper of your heart—it knows the path you're meant to follow. I believe in your strength, in the quiet power that guides you through every trial. Lean into that belief as I lean into mine for you.",
+    "paragraph3": "Together, we build bridges over the chasms of uncertainty, one step at a time. Let my unwavering faith in you become the foundation beneath your feet. You are capable, you are resilient, and you are never alone in this journey.",
+    "image": "/doubtful.jpg"
+  },
+  {
+    "slug": "open-when-youre-overwhelmed",
+    "title": "Open When You're Overwhelmed",
+    "paragraph1": "My heart, when life's demands feel too heavy, take a moment to pause and breathe deeply with me. The world may spin faster than your breath, but each inhale and exhale anchors you in the present. You are not racing alone; I match your pace with every supportive thought.",
+    "paragraph2": "Let this message be your reminder that even the mightiest mountain can be climbed one step at a time. I share your load, offering my strength where yours feels spent. Together, we carve a path through the chaos, hand in hand.",
+    "paragraph3": "You are doing more than you realize—courage is not born from ease but forged in challenge. Trust in your resilience and in my unwavering presence beside you. We will find our calm within the storm, one breath, one step, one moment at a time.",
+    "image": "/overwhelmed.jpg"
+  },
+  {
+    "slug": "open-when-you-cant-sleep",
+    "title": "Open When You Can't Sleep",
+    "paragraph1": "My love, if the night feels endless and your mind chases shadows, close your eyes and imagine my voice lulling you into rest. Each whispered word is a promise that you are safe, cherished, and never alone in the quiet darkness.",
+    "paragraph2": "Picture us beneath a canopy of stars, where I gently tuck you in and trace constellations across the sky with my fingertips. Let the rhythm of my heartbeat become your nighttime melody, guiding you toward peace.",
+    "paragraph3": "Sleep will find you when the world softens and your mind surrenders to gentle dreams. Until then, hold this letter close and know that I am the steady light in your night—always watching over you.",
+    "image": "/cant-sleep.jpg"
+  },
+  {
+    "slug": "open-when-you-feel-lonely",
+    "title": "Open When You Feel Lonely",
+    "paragraph1": "Sweetheart, loneliness can feel like a vast, empty ocean—but even the deepest waters are filled with life unseen. In the stillness, listen for the echo of my love reaching out to you, a lifeline cast across the waves.",
+    "paragraph2": "Imagine my arms encircling you, a warm embrace that dissolves the cold of solitude. In every silent pause, I am there, filling the spaces with my devotion and reminding you of the bond we share.",
+    "paragraph3": "Whenever the world drifts away, return to the certainty of our connection. You carry my heart within you, a beacon of light guiding you back to home—no matter where you are.",
+    "image": "/lonely.jpg"
+  },
+  {
+    "slug": "open-when-youre-anxious",
+    "title": "Open When You're Anxious",
+    "paragraph1": "My dearest, I feel the tension gripping your chest and I honor the bravery it takes to face each uncertain moment. Anxiety may whisper worries you cannot quell—but you do not have to silence it alone.",
+    "paragraph2": "Breathe with me: inhale courage, exhale fear. Let each breath be a gentle reminder that you are grounded here, held by my unshakable support. I am your calm in the rush, your steady anchor in turbulent seas.",
+    "paragraph3": "Trust that this too shall pass, like clouds drifting across a wide, open sky. In every heartbeat, know that you are loved beyond measure and that I walk every step with you—through storms and into serenity.",
+    "image": "/anxious.jpg"
+  },
+  {
+    "slug": "open-when-you-need-a-smile",
+    "title": "Open When You Need a Smile",
+    "paragraph1": "Darling, if your spirit feels heavy, let these words be the first spark of joy to brighten your day. Imagine me dancing like a fool, arms flailing in the sunniest of spots, just to coax a grin from you.",
+    "paragraph2": "Remember our laughter echoing through lazy afternoons, the silly inside jokes only we understand. Those moments are etched in my heart, a gallery of light we can revisit whenever you need warmth.",
+    "paragraph3": "Let this letter be your personal sunshine—open it whenever you crave a reminder that life is sweeter with your laughter in it. You are my favorite reason to smile.",
+    "image": "/smile.jpg"
+  },
+  {
+    "slug": "open-when-you-feel-like-giving-up",
+    "title": "Open When You Feel Like Giving Up",
+    "paragraph1": "My courage, if despair whispers that you are at the end of your rope, know that I refuse to let go. You have scaled peaks I can only dream of, persevered when every part of you begged for rest.",
+    "paragraph2": "Let my unwavering faith be the beacon that guides you back from the brink. In your darkest hour, my belief in you shines like a lighthouse, illuminating possibilities when you can no longer see the shore.",
+    "paragraph3": "Rest if you must, gather your strength in quiet reflection, but do not surrender. You are woven from stardust and grit—extraordinary in your resilience and boundless in your potential.",
+    "image": "/giving-up.jpg"
+  },
+  {
+    "slug": "open-when-you-need-to-be-loved",
+    "title": "Open When You Need to Be Loved",
+    "paragraph1": "My beloved, let these words wrap around you like a tender embrace on days when affection feels distant. In every letter, feel the depth of my devotion, woven into each syllable just for you.",
+    "paragraph2": "You are worthy of boundless love—even on days when the mirror reflects doubt. My heart sings your name in every breath, adoring you for all that you are and all you will become.",
+    "paragraph3": "Let this message be a constant reminder that you are never unloved. My love is a steady river, flowing wildly and endlessly, nourishing your soul through every season.",
+    "image": "/need-love.jpg"
+  },
+  {
+    "slug": "open-when-its-our-monthsary",
+    "title": "Open When It's Our Monthsary",
+    "paragraph1": "Happy monthsary, my love! Another cycle of sunrises and sunsets spent weaving our story together. Each chapter brings new lessons, laughter, and the deepening of a bond I cherish more than words can capture.",
+    "paragraph2": "I celebrate every smile you share, every gentle touch that speaks volumes, and every moment of growth we've nurtured side by side. Our love is a garden blooming with trust, kindness, and shared dreams.",
+    "paragraph3": "Thank you for walking this path with me—hand in hand, heart to heart. Here's to countless more months of joy, wonder, and the beautiful adventure of us.",
+    "image": "/monthsary.jpg"
+  },
+  {
+    "slug": "open-when-youre-celebrating-a-win",
+    "title": "Open When You're Celebrating a Win",
+    "paragraph1": "My champion, you've done it—you've conquered the challenge and emerged victorious. I feel my pride swelling at the thought of your triumph; your hard work and dedication have painted this moment in brilliant hues.",
+    "paragraph2": "Take a pause and let this victory sink in, for every step you took paved the way to this achievement. I stand beside you, cheering louder than anyone, honored to share in your joy and success.",
+    "paragraph3": "Together, let's celebrate this milestone with hearts full of gratitude and eyes fixed on the horizons yet to come. Your victory is ours, and I cannot wait to see where your brilliance leads next.",
+    "image": "/win.jpg"
+  },
+  {
+    "slug": "open-when-you-need-hope",
+    "title": "Open When You Need Hope",
+    "paragraph1": "My light, when shadows gather and the future feels uncertain, hold this letter close like a flickering candle in the dark. Even the smallest flame can guide the way through the longest night.",
+    "paragraph2": "Imagine us standing at dawn's first glow, the sky painted in promise. Hope resides in every new breath, every whispered dream, and I carry that brightness within me for you.",
+    "paragraph3": "Trust that the dawn always arrives—together, we will greet it with open hearts and unwavering belief in brighter days ahead. Hold on a little longer; I am here, holding hope until you can hold it yourself.",
+    "image": "/hope.jpg"
   }
 ]
